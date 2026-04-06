@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Task Manager</title>
+</head>
+<body>
+
+<h1>Simple Task Manager</h1>
+
+<p>Total Tasks: <%= totalTasks %> | Completed: <%= completedTasks %></p>
+
+<ul>
+  <% tasks.forEach((task, index) => { %>
+    <li>
+      <% if(task.completed) { %>
+        <s><%= task.description %></s>
+      <% } else { %>
+        <%= task.description %>
+      <% } %>
+
+      (Due: <%= task.dueDate || "None" %>)
+
+      <a href="/complete/<%= index %>">Complete</a>
+      <a href="/delete/<%= index %>">Delete</a>
+
+      <form method="POST" action="/edit/<%= index %>">
+        <input name="task" placeholder="Edit task" required>
+        <input type="date" name="dueDate">
+        <button type="submit">Update</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+
+<form method="POST" action="/add">
+    <input name="task" placeholder="New task" required>
+    <input type="date" name="dueDate">
+    <button type="submit">Add Task</button>
+</form>
+
+</body>
+</html>
