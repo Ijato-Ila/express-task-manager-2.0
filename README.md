@@ -20,7 +20,7 @@ The goal of this module is to build upon a previously created application by add
 - Data stored using a JSON file
 
 ## Software Demo Video
-[Watch the Demo Video](PASTE YOUR VIDEO LINK HERE)
+https://youtu.be/vsTbQqCtGsw
 
 ## Development Environment
 - Node.js

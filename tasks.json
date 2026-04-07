@@ -1,7 +1,7 @@
 [
   {
-    "description": "Sample task",
-    "completed": false,
-    "dueDate": null
+    "description": "COOK DINNER",
+    "completed": true,
+    "dueDate": ""
   }
 ]
