@@ -1,10 +1,13 @@
-# Express Task Manager
+# Express Task Manager 2.0
 
 ## Overview
-This is a simple Task Manager Web Application built using Node.js and Express. 
+This is an enhanced version of the original Express Task Manager built using Node.js and Express. 
 It allows users to view, add, edit, complete, and delete tasks dynamically in the browser.
-The app demonstrates handling GET and POST requests, dynamic HTML generation, and basic web server functionality. 
-Task data is stored in a JSON file for persistence.
+The application demonstrates handling GET and POST requests, dynamic HTML generation, and basic web server functionality. 
+Task data is stored in a JSON file to ensure persistence.
+
+## Purpose of This Module
+The goal of this module is to build upon a previously created application by adding more advanced features and improving functionality. It demonstrates the ability to extend existing code, implement new routes, and manage application data effectively.
 
 ## Features
 - View a list of tasks
@@ -29,3 +32,4 @@ Task data is stored in a JSON file for persistence.
 * https://nodejs.org/en/docs/
 * https://expressjs.com/
 * https://developer.mozilla.org/en-US/docs/Learn/Forms
+
